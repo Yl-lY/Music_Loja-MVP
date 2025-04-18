@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Loja</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="imagens/favicon.png" type="image/x-icon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Geo:ital@1&family=Kaisei+Opti&family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Geo:ital@1&family=Kaisei+Opti&family=Protest+Riot&family=Roboto&display=swap');
+  </style>
+</head>
+<body>
+  <header>
+    <button class="logo" onclick="location.href='index.html'">
+      <img src="imagens/icons8-música-40.png" alt="Logo da Loja">
+    </button>
+    <nav>
+      <a href="https://wa.me/5544999388758?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20uma%20encomendar!" target="_blank">Produtos</a>
+      <a href="https://wa.me/5544999388758?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20servi%C3%A7o!" target="_blank">Serviços</a>
+      <a href="#sobre-nos">Sobre nós</a>
+    </nav>
+  </header>
+<section class="carousel">
+  <div class="slides" id="slides">
+    <div class="slide">
+      <img src="imagens/img1.jpg" alt="Slide 1"/>
+      <div class="slide-content">
+        <h1>Music Loja</h1>
+        <p>Sua loja de música em Maringá</p>
+        <a href="https://wa.me/5544999388758?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20aula%20experimental!" target="_blank">
+          <button>
+            <img src="imagens/agenda-icon.png" alt="Ícone de agenda"> Agende sua aula
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="imagens/img2.jpg" alt="Slide 2"/>
+      <div class="slide-content">
+        <h1>Music Loja</h1>
+        <p>Instrumentos e acessórios</p>
+        <a href="https://wa.me/5544999388758?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20uma%20encomendar!" target="_blank">
+          <button>
+            <img src="imagens/compra-icon.png" alt="Ícone de compras"> Compre agora
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="imagens/img3.jpg" alt="Slide 3"/>
+      <div class="slide-content">
+        <h1>Music Loja</h1>
+        <p>Serviços de manutenção</p>
+        <a href="https://wa.me/5544999388758?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20servi%C3%A7o!" target="_blank">
+          <button>
+            <img src="imagens/servico-icon.png"> Solicite serviço
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="controls">
+    <span id="prev"><img src="imagens/seta-prev.png" alt="Seta para acessar o item anterior do carrousel"></span>
+    <span id="next"><img src="imagens/seta-next.png" alt="Seta para acessar o item seguinte do carrousel"></span>
+  </div>
+</section>
+
+<section class="sobre-nos" id="sobre-nos">
+  <div class="img-box">
+    <img src="imagens/mic.jpg" alt="Microfone e instrumentos"/>
+  </div>
+  <div class="texto">
+    <h2>Sobre nós</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+    <div class="icones">
+      <a href="https://www.instagram.com/music_loja?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="text-decoration: none;">
+        <button> <img src="imagens/insta-vector.png" alt="Instagram vector"> Instagram</button>
+      </a>
+
+      <a href="https://wa.me/5544999388758?text=Ol%C3%A1%2C%20conheci%20sua%20loja%20pelo%20site%2C%20gostaria%20de%20faze%20contato!" target="_blank" style="text-decoration: none;">
+        <button><img src="imagens/zapzap-vector.png" alt="Whatsapp vector"> Whatsapp</button>
+      </a>  
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Protest Riot', sans-serif;
+    background-color: #fff;
+    color: #333;
+    width: 100vw;
+    height: auto;
+    max-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.553);
+  }
+  
+  nav {
+    display: flex;
+    gap: 15vw;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.7vh;
+  }
+
+  nav a:hover {
+    transition: transform 0.2s ease;
+    transform: scale(1.1);
+  }
+  
+  div h1 {
+    font-family: "Protest Riot", sans-serif;
+    height: 90px;
+    line-height: 100%;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .logo {
+    display: block;
+    background: transparent;
+    border: none;
+    position: absolute;
+    left: 2rem;
+    top: 1.5rem;
+    cursor: pointer;
+    z-index: 20;
+  }
+  
+  .logo img {
+    width: 30px;
+    padding: 30%;
+    border: 1px solid white;
+    border-radius: 50%
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+    width: calc(100vw * 3); /* 5 slides */
+  }
+  
+  .slide {
+    position: relative;
+    min-width: 100vw;
+    height: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    padding-top: 65vh;
+    padding-left: 30vw;
+    border-width: 0 55vw 15vw 35vw;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.46);
+    rotate: 140deg;
+    
+    z-index: 1;
+  }
+
+  .slide::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -89.8vh;
+    left: -45.7vh;
+    border-top: 100vh solid transparent;
+    border-left: 60vh solid transparent;
+    border-right: 67vh solid rgba(0, 0, 0, 0.46);
+    border-bottom: 55vh solid transparent;
+    rotate: 50deg;
+
+    z-index: 1;
+  }
+  
+  .slide-content {
+    position: absolute;
+    top: 13.5%;
+    left: 7%;
+    z-index: 2;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 395px;
+    color: white;
+  }
+  
+  .slide-content h1 {
+    font-family: 'Protest Riot', cursive;
+    font-size: 90px;
+    margin: 0;
+  }
+  
+  .slide-content p {
+    font-family: 'Inria Serif', serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 1rem 0;
+  }
+  
+  .slide-content button {
+    text-align: center;
+    padding: 0.8rem 2rem;
+    background: #20719db9;
+    color: white;
+    border-radius: 18px;
+    font-weight: 500;
+    font-size: 35px;
+    font-family: 'Protest Riot', sans-serif;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 1vw;
+    border-style: hidden;
+  }
+
+  .slide-content button:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background: #2b97d1b9;
+  }
+
+  .slide-content button img {
+    width: 5vh;
+  }
+  
+  .controls span {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+    transform: translateY(-50%);
+    z-index: 20;
+  }
+  
+  .controls span#prev {
+    left: 10px;
+  }
+  
+  .controls span#next {
+    right: 10px;
+  }
+  
+  .sobre-nos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(266.97deg, #20729D 15.06%, rgba(0, 167, 255, 0.6) 90.99%);
+    /* padding: 4rem; */
+    gap: 2rem;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .sobre-nos::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 25vh;
+    left: -74.5vh;
+    border-top: 100vh solid transparent;
+    border-left: 60vh solid transparent;
+    border-right: 67vh solid white;
+    border-bottom: 55vh solid transparent;
+    rotate: -39deg;
+
+    z-index: 1;
+  }
+  
+  .img-box {
+    z-index: 2;
+  }
+
+  .img-box img {
+    width: 70vh;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  .texto {
+    width: 45vw;
+    color: rgba(255, 255, 255, 0.75);
+    position: relative;
+    top: -10vh;
+  }
+  
+  .texto h2 {
+    font-family: 'Protest Riot', cursive;
+    font-size: 60px;
+    line-height: 72px;
+    color: #fff;
+  }
+  
+  .texto p {
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    margin-top: 1rem;
+  }
+  
+  .icones {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .icones button {
+    background: transparent;
+
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-style: hidden;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Protest Riot', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .icones button:hover {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.1) rotate(3deg);
+    mask-image: linear-gradient(45deg, black, black, transparent);
+  }
+  
+  .icones img {
+    width: 37px;
+    height: 39px;
+  }
+  
